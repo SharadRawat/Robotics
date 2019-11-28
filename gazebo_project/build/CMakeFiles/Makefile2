@@ -60,13 +60,50 @@ CMAKE_SOURCE_DIR = /home/robond/Robotics/gazebo_project
 CMAKE_BINARY_DIR = /home/robond/Robotics/gazebo_project/build
 
 #=============================================================================
+# Target rules for target CMakeFiles/robopush.dir
+
+# All Build rule for target.
+CMakeFiles/robopush.dir/all:
+	$(MAKE) -f CMakeFiles/robopush.dir/build.make CMakeFiles/robopush.dir/depend
+	$(MAKE) -f CMakeFiles/robopush.dir/build.make CMakeFiles/robopush.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robond/Robotics/gazebo_project/build/CMakeFiles --progress-num=1,2 "Built target robopush"
+.PHONY : CMakeFiles/robopush.dir/all
+
+# Include target in all.
+all: CMakeFiles/robopush.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/robopush.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robond/Robotics/gazebo_project/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/robopush.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robond/Robotics/gazebo_project/build/CMakeFiles 0
+.PHONY : CMakeFiles/robopush.dir/rule
+
+# Convenience name for target.
+robopush: CMakeFiles/robopush.dir/rule
+
+.PHONY : robopush
+
+# clean rule for target.
+CMakeFiles/robopush.dir/clean:
+	$(MAKE) -f CMakeFiles/robopush.dir/build.make CMakeFiles/robopush.dir/clean
+.PHONY : CMakeFiles/robopush.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/robopush.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/welcomemessage.dir
 
 # All Build rule for target.
 CMakeFiles/welcomemessage.dir/all:
 	$(MAKE) -f CMakeFiles/welcomemessage.dir/build.make CMakeFiles/welcomemessage.dir/depend
 	$(MAKE) -f CMakeFiles/welcomemessage.dir/build.make CMakeFiles/welcomemessage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robond/Robotics/gazebo_project/build/CMakeFiles --progress-num=1,2 "Built target welcomemessage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robond/Robotics/gazebo_project/build/CMakeFiles --progress-num=3,4 "Built target welcomemessage"
 .PHONY : CMakeFiles/welcomemessage.dir/all
 
 # Include target in all.

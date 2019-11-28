@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named robopush
+
+# Build rule for target.
+robopush: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 robopush
+.PHONY : robopush
+
+# fast build rule for target.
+robopush/fast:
+	$(MAKE) -f CMakeFiles/robopush.dir/build.make CMakeFiles/robopush.dir/build
+.PHONY : robopush/fast
+
+#=============================================================================
 # Target rules for targets named welcomemessage
 
 # Build rule for target.
@@ -122,6 +135,33 @@ welcomemessage: cmake_check_build_system
 welcomemessage/fast:
 	$(MAKE) -f CMakeFiles/welcomemessage.dir/build.make CMakeFiles/welcomemessage.dir/build
 .PHONY : welcomemessage/fast
+
+scripts/robopush.o: scripts/robopush.cpp.o
+
+.PHONY : scripts/robopush.o
+
+# target to build an object file
+scripts/robopush.cpp.o:
+	$(MAKE) -f CMakeFiles/robopush.dir/build.make CMakeFiles/robopush.dir/scripts/robopush.cpp.o
+.PHONY : scripts/robopush.cpp.o
+
+scripts/robopush.i: scripts/robopush.cpp.i
+
+.PHONY : scripts/robopush.i
+
+# target to preprocess a source file
+scripts/robopush.cpp.i:
+	$(MAKE) -f CMakeFiles/robopush.dir/build.make CMakeFiles/robopush.dir/scripts/robopush.cpp.i
+.PHONY : scripts/robopush.cpp.i
+
+scripts/robopush.s: scripts/robopush.cpp.s
+
+.PHONY : scripts/robopush.s
+
+# target to generate assembly for a file
+scripts/robopush.cpp.s:
+	$(MAKE) -f CMakeFiles/robopush.dir/build.make CMakeFiles/robopush.dir/scripts/robopush.cpp.s
+.PHONY : scripts/robopush.cpp.s
 
 scripts/welcomemessage.o: scripts/welcomemessage.cpp.o
 
@@ -157,8 +197,12 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... robopush"
 	@echo "... rebuild_cache"
 	@echo "... welcomemessage"
+	@echo "... scripts/robopush.o"
+	@echo "... scripts/robopush.i"
+	@echo "... scripts/robopush.s"
 	@echo "... scripts/welcomemessage.o"
 	@echo "... scripts/welcomemessage.i"
 	@echo "... scripts/welcomemessage.s"

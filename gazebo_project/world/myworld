@@ -6647,6 +6647,7 @@
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
       <pose frame=''>-2.82647 0.399193 0.388889 0 -0 0</pose>
+    <plugin name="robopush" filename="librobopush.so"/>
     </model>
     <model name='myrobo_clone'>
       <link name='link_0'>
@@ -7726,6 +7727,7 @@
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
       <pose frame=''>9.78818 -4.6056 0.213907 1e-06 1e-06 0.004793</pose>
+    <plugin name="robopush" filename="librobopush.so"/>
     </model>
   </world>
 </sdf>
