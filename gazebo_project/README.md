@@ -1,6 +1,6 @@
 #### This is my office 
 
-![](myoffice.png)
+![](MyOffice.png)
 
 The world also contains 2 plugins:
 
