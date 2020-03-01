@@ -1,0 +1,8 @@
+prefix=/home/robond/Robotics/Project_2_Robochase/install
+
+Name: ball_chaser
+Description: Description of ball_chaser
+Version: 0.0.0
+Cflags: -I/home/robond/Robotics/Project_2_Robochase/install/include
+Libs: -L/home/robond/Robotics/Project_2_Robochase/install/lib 
+Requires: 
