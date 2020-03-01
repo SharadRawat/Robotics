@@ -1,2 +1,0 @@
-ball_chaser:my_robot
--DCATKIN_DEVEL_PREFIX=/home/robond/Robotics/Project_2_Robochase/devel -DCMAKE_INSTALL_PREFIX=/home/robond/Robotics/Project_2_Robochase/install -G Unix Makefiles
