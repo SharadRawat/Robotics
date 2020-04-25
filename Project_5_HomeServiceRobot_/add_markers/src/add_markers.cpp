@@ -3,12 +3,12 @@
 #include <geometry_msgs/PoseWithCovarianceStamped.h>
 #include <visualization_msgs/Marker.h>
 
-double robot_x_, robot_y_;
-double DISTANCE_THRESHOLD = 0.01;
-double PICKUP_X = 7.5, PICKUP_Y = 10.0;
-double DROPOFF_X = -10.0, DROPOFF_Y = 6.0;
-int WAIT_TIME = 5;
-int current_wait_ = 0;
+static double robot_x_, robot_y_;
+static const double DISTANCE_THRESHOLD = 0.01;
+static const double PICKUP_X = 7.5, PICKUP_Y = 10.0;
+static const double DROPOFF_X = -10.0, DROPOFF_Y = 6.0;
+static const int WAIT_TIME = 5;
+static int current_wait_ = 0;
 
 void robotPoseCallback(const geometry_msgs::PoseWithCovarianceStamped::ConstPtr &msg_amcl)
 {
